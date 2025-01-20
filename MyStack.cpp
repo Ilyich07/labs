@@ -2,7 +2,7 @@
 
     Stack::Stack() : capacity(10), size(0), data(new int[10]){}
 
-    Stack& Stack::operator<<(int const a){
+    Stack& Stack::operator<<(int const &a){
         if(size < capacity){
             data[size] = a;
             ++size;
